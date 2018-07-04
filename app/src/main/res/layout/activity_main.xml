@@ -122,7 +122,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/my_profile_xxx" />
+                    android:src="@drawable/myprofile_xxx" />
 
                 <TextView
                     android:layout_width="wrap_content"
