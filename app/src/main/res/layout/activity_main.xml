@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scaleType="centerCrop"
-            android:src="@drawable/mainpage_xxx" />
+            android:src="@drawable/mainpage" />
 
         <TextView
             android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/facilities_xxx" />
+                    android:src="@drawable/facilities" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/myprofile_xxx" />
+                    android:src="@drawable/myprofile" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -150,7 +150,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/programs_xxx" />
+                    android:src="@drawable/programs" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -178,7 +178,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/blackboard_xxx" />
+                    android:src="@drawable/blackboard" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/people_xxx" />
+                    android:src="@drawable/people" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -241,7 +241,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/calendar_xxx" />
+                    android:src="@drawable/calendar" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -269,7 +269,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/news_xxx" />
+                    android:src="@drawable/news" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -297,7 +297,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/gallery_xxx" />
+                    android:src="@drawable/gallery" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -332,7 +332,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/social_xxx" />
+                    android:src="@drawable/social" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -360,7 +360,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/emergency_xxx" />
+                    android:src="@drawable/emergency" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -388,7 +388,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/transport_xxx" />
+                    android:src="@drawable/transport" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -416,7 +416,7 @@
                     android:paddingEnd="14dp"
                     android:paddingStart="14dp"
                     android:paddingTop="5dp"
-                    android:src="@drawable/getintouch_xxx" />
+                    android:src="@drawable/getintouch" />
 
                 <TextView
                     android:layout_width="wrap_content"

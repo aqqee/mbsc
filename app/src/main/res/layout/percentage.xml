@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -49,7 +50,44 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/LogoBar">
 
-            <ImageView
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v4.view.ViewPager>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btnMain"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:text="Discover Our Flexible MBA\nProgram"
+                android:textColor="#FFF"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/btnMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/dots"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:text="Learn More"
+                android:textAllCaps="false"
+                android:textColor="#FFF" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/dots"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"/>
+            <!--<ImageView
                 android:id="@+id/mainimage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -64,7 +102,7 @@
                 android:layout_marginStart="20dp"
                 android:text="Creating Entrepreneurial\nInnovators and Leaders"
                 android:textColor="#FFF"
-                android:textSize="20dp" />
+                android:textSize="20dp" />-->
 
 
         </RelativeLayout>
@@ -75,7 +113,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="45"
-        android:background="@color/color_DarkBlue"
+        android:background="@drawable/item_background"
         android:orientation="vertical"
         android:weightSum="12">
 
@@ -83,22 +121,23 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@drawable/item_background">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_LightBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/facilities"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/facilities_xxx" />
+                    android:src="@drawable/facilities" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -114,15 +153,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_DarkBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/myprofile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/myprofile_xxx" />
+                    android:src="@drawable/myprofile" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -138,15 +177,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_LightBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/programs"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/programs_xxx" />
+                    android:src="@drawable/programs" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -170,7 +209,7 @@
                     android:id="@+id/Blackboard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/blackboard_xxx" />
+                    android:src="@drawable/blackboard" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -188,7 +227,8 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@drawable/item_background">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -202,7 +242,7 @@
                     android:id="@+id/people"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/people_xxx" />
+                    android:src="@drawable/people" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -226,7 +266,7 @@
                     android:id="@+id/calendar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/calendar_xxx" />
+                    android:src="@drawable/calendar" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -242,15 +282,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_DarkBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/news"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/news_xxx" />
+                    android:src="@drawable/news" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -266,15 +306,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_LightBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/gallery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/gallery_xxx" />
+                    android:src="@drawable/gallery" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -292,22 +332,23 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="4"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@drawable/item_background">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_LightBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/social"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/social_xxx" />
+                    android:src="@drawable/social" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -323,15 +364,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_DarkBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/emergency"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/emergency_xxx" />
+                    android:src="@drawable/emergency" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -347,15 +388,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_LightBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/transport"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/transport_xxx" />
+                    android:src="@drawable/transport" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -371,15 +412,15 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical|center_horizontal"
                 android:layout_weight="1"
-                android:gravity="center"
                 android:background="@color/color_DarkBlue"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/getintouch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/getintouch_xxx" />
+                    android:src="@drawable/getintouch" />
 
                 <TextView
                     android:layout_width="wrap_content"
