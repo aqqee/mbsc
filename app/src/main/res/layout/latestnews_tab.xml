@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29 May 2018"
+            android:textColor="#40404b"
+            android:textSize="15dp"
+            android:typeface="sans"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTEAD to organize summer programs for\nstudents of the Prince Mohammad bin Salman\nCollege"
+            android:textColor="#23205d"
+            android:textSize="12dp"
+            android:typeface="serif"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:src="@drawable/red_arrow_right"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

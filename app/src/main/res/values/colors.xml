@@ -7,14 +7,20 @@
     <color name="color_b00612">#b00612</color>
     <color name="color_LightBlue">#282561</color>
     <color name="color_DarkBlue">#23205d</color>
-    <color name="button_pressed">#ae121d</color>
-    <color name="button_focused">#ae121d</color>
-    <color name="button_default">#e21625</color>
+    <color name="button_pressed">#8b121b</color>
+    <color name="button_default">#b00612</color>
 
     <color name="db_item_pressed">#363374</color>
     <color name="db_item_default">#23205d</color>
     <color name="lb_item_pressed">#363374</color>
     <color name="lb_item_default">#282561</color>
+
+
+
+    <color name="tabTextColor">#a7a6ac</color>
+    <color name="tabIndicatorColor">#a7a6ac</color>
+
+
 
 
 </resources>
