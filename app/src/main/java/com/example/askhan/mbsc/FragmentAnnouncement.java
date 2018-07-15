@@ -10,15 +10,10 @@ import android.view.ViewGroup;
 
 public class FragmentAnnouncement extends Fragment {
 
-    View view;
-
-    public FragmentAnnouncement(){
-    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.announcement_tab,container,false);
-        return view;
+        return inflater.inflate(R.layout.announcement_tab, container, false);
     }
 }

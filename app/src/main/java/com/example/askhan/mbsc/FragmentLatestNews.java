@@ -10,15 +10,10 @@ import android.view.ViewGroup;
 
 public class FragmentLatestNews extends Fragment {
 
-    View view;
-
-    public FragmentLatestNews(){
-    }
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.latestnews_tab,container,false);
-        return view;
+        return inflater.inflate(R.layout.latestnews_tab, container, false);
     }
 }
