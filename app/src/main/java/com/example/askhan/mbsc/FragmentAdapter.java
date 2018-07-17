@@ -1,47 +1,48 @@
 package com.example.askhan.mbsc;
 
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.content.Context;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
+public class FragmentAdapter extends TabLayout {
 
-public class FragmentAdapter extends FragmentPagerAdapter{
-
-    public FragmentAdapter(FragmentManager fm) {
-        super(fm);
+    public FragmentAdapter(Context context) {
+        super(context);
     }
 
-    @Override
-    public Fragment getItem(int position) {
-        Fragment fragment = null;
-        switch (position){
-            case 0:
-                fragment = new FragmentAnnouncement();
-                break;
-            case 1:
-                fragment = new FragmentLatestNews();
-                break;
-        }
-        return fragment;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_main, container, false);
+        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
+        tabLayout.addTab(tabLayout.newTab().setText("Announcement"));
+        tabLayout.addTab(tabLayout.newTab().setText("Latest News"));
+        tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        return view;
     }
 
-    @Override
-    public int getCount() {
-        return 2;
-    }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        switch (position){
-            case 0:
-                return "Announcement";
-            case 1:
-                return "Latest News";
-        }
-        return null;
     }
-}
