@@ -96,23 +96,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_alignParentBottom="true" />
-                    <!--<ImageView
-                        android:id="@+id/mainimage"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/mainpage_xxx" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignBottom="@+id/mainimage"
-                        android:layout_marginBottom="20dp"
-                        android:layout_marginStart="20dp"
-                        android:text="Creating Entrepreneurial\nInnovators and Leaders"
-                        android:textColor="#FFF"
-                        android:textSize="20dp" />-->
-
 
                 </RelativeLayout>
 
@@ -527,7 +510,72 @@
                     app:tabTextAppearance="?android:attr/textAppearanceMedium"
                     app:tabTextColor="#a7a6ac" />
 
-            </LinearLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <RelativeLayout
+                        android:id="@+id/vp_wrapper_announce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/announce_vp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/indicator_announce"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_alignParentBottom="true"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_background"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:clickable="true"
+                    android:layout_marginBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pdf_icon"
+                            android:layout_gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/btn_pdf_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="download prospectus 2017/18"
+                            android:textAllCaps="true"
+                            android:layout_marginStart="15dp"
+                            android:textColor="#fff"
+                            android:textSize="16dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+ </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

@@ -11,6 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+public class FragmentAdapter{
+
+        }
+/*
 public class FragmentAdapter extends TabLayout {
 
     public FragmentAdapter(Context context) {
@@ -46,3 +50,4 @@ public class FragmentAdapter extends TabLayout {
 
 
     }
+*/

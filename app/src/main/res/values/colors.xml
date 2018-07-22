@@ -4,7 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_23205d">#23205d</color>
-    <color name="color_b00612">#b00612</color>
     <color name="color_LightBlue">#282561</color>
     <color name="color_DarkBlue">#23205d</color>
     <color name="button_pressed">#8b121b</color>
@@ -14,13 +13,6 @@
     <color name="db_item_default">#23205d</color>
     <color name="lb_item_pressed">#363374</color>
     <color name="lb_item_default">#282561</color>
-
-
-
-    <color name="tabTextColor">#a7a6ac</color>
-    <color name="tabIndicatorColor">#a7a6ac</color>
-
-
 
 
 </resources>
